@@ -4,7 +4,7 @@ This project aims to make a Communication Channel between Students, Professors, 
 It was developed on Manjaro 17.1.6 using Linux Kernel 4.14.20-2-MANJARO, Python 3.6.4 and Django 2.0.2
 
 
-#Instalation
+# Instalation
 This project uses Postgresql version 10.1, so make sure that you have postgres instaled on your Linux Distribution.
 
 First of all, let us configure our database. To do so:
@@ -37,8 +37,13 @@ Now, let us migrate the database:
     python manage.py makemigrations
     python manage.py migrate
 
+Create a superuser, by using the command:
+
+    python manage.py createsuperuser
+
 After that, you are ready to run the project:
 
     python manage.py runserver
 
-Finnaly, you got the project running. Enjoy! (:
+
+Finnaly, you got the project running on http://127.0.0.0:8000. Enjoy! (:
